@@ -1,0 +1,16 @@
+{
+  "name": "custom-health-check-jpu",
+  "version": "1.0.0",
+  "description": "custom kubernetes health check demo",
+  "author": "Jean-Christophe Puja <jpu@bluesky-it.ch>",
+  "license": "MIT",
+  "main": "app.js",
+  "keywords": [
+    "nodejs",
+    "bootstrap",
+    "express"
+  ],
+  "dependencies": {
+    "express": "4.17.1"
+  }
+}

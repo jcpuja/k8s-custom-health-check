@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    test: liveness
+  name: liveness-custom
+spec:
+  containers:
+  - name: liveness
+    image: gcr.io/coding-challenge-sge/custom-health-check-jpu:latest
+    livenessProbe:
+      httpGet:
+        path: /health
+        port: 8080
+      initialDelaySeconds: 3
+      periodSeconds: 3
